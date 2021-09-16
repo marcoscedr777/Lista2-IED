@@ -38,9 +38,9 @@ bool read_uint(unsigned long * restrict dest)
 }
 
 struct Pessoa {
-  char nome[MAX_INPUT_SIZE];
+  char nome[MAX_INPUT_SIZE + 1];
   unsigned long idade;
-  char email[MAX_INPUT_SIZE];
+  char email[MAX_INPUT_SIZE + 1];
 };
 
 int main()
